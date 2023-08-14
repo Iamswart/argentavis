@@ -3,11 +3,7 @@ import React from "react";
 import { AiFillApple } from "react-icons/ai";
 import { BsGooglePlay } from "react-icons/bs";
 
-// interface StoreButtonProps extends ButtonProps {
-//   icon: React.ComponentType; 
-//   label: string;
-//   storeLink: string; 
-// }
+
 
 const StoreButton = ({ icon, label, storeLink, ...props }) => {
   return (

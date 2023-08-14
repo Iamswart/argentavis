@@ -1,8 +1,8 @@
-import { Box, Center, Image, VStack, Text } from "@chakra-ui/react";
+import { Box, Center, Image, Text, VStack } from "@chakra-ui/react";
+import { useLocation } from "react-router-dom";
 import momo from "../assets/momo.png";
 import AppButtons from "../components/AppButtons";
 import SubmitOtp from "../components/SubmitOtp";
-import { useLocation } from "react-router-dom";
 
 function VerifyOtpPage() {
   const location = useLocation();

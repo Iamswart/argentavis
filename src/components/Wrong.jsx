@@ -1,6 +1,6 @@
 // NotFound.tsx
 
-import { Box, Button, Center, Heading, Text, VStack, useColorModeValue } from '@chakra-ui/react';
+import { Button, Center, Heading, Text, VStack, useColorModeValue } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 const BadRequest = () => {

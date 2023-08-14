@@ -1,7 +1,7 @@
-import { Box, Center, Image, VStack, Text, Flex } from "@chakra-ui/react";
+import { Box, Center, Flex, Image, Text, VStack } from "@chakra-ui/react";
 import momo from "../assets/momo.png";
-import AppButtons from "../components/AppButtons";
 import Activation from "../components/Activation";
+import AppButtons from "../components/AppButtons";
 
 function ActivationPage({ uuid }) {
   return (

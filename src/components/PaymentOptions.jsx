@@ -1,20 +1,20 @@
 import {
-  Box,
-  VStack,
   Accordion,
-  AccordionItem,
   AccordionButton,
+  AccordionItem,
   AccordionPanel,
-  Text,
-  useClipboard,
+  Box,
   IconButton,
+  Text,
   Tooltip,
+  VStack,
+  useClipboard,
 } from "@chakra-ui/react";
-import React, { useState, useEffect } from "react";
-import { MdDialerSip, MdApps } from "react-icons/md";
+import React, { useEffect, useState } from "react";
 import { BsBank } from "react-icons/bs";
 import { FaCopy } from "react-icons/fa";
-import AppButtons from "../components/AppButtons"
+import { MdApps, MdDialerSip } from "react-icons/md";
+import AppButtons from "../components/AppButtons";
 
 const PaymentOptions = ({ uuid }) => {
   const [userDetails, setUserDetails] = useState(null);

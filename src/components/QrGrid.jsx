@@ -4,7 +4,6 @@ import {
   Flex,
   Image,
   SimpleGrid,
-  VStack,
   useToast
 } from "@chakra-ui/react";
 import { saveAs } from "file-saver";

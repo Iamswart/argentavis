@@ -1,5 +1,5 @@
-import { Box } from '@chakra-ui/react'
-import React, { ReactNode, forwardRef } from 'react';
+import { Box } from '@chakra-ui/react';
+import React, { forwardRef } from 'react';
 
 
 

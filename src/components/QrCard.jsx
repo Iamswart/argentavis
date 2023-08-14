@@ -1,11 +1,10 @@
 import {
   Box,
   Flex,
-  Stack,
   Image,
+  Stack,
 } from "@chakra-ui/react";
 import React from "react";
-import Code2 from "./Code2";
 
 const Card = ({ s3URL }) => {
   return (

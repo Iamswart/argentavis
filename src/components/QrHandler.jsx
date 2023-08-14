@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import PaymentsPage from '../pages/PaymentsPage';
+import React, { useEffect, useState } from 'react';
 import ActivationPage from '../pages/ActivationPage';
-import LoadingComponent from './LoadingComponent'
+import PaymentsPage from '../pages/PaymentsPage';
+import LoadingComponent from './LoadingComponent';
 
 function QRHandler() {
   const [qrData, setQrData] = useState(null);

@@ -1,7 +1,6 @@
-import { Box, Center, Image, VStack, Text } from "@chakra-ui/react";
-import PaymentOptions from "../components/PaymentOptions";
+import { Box, Center, Image, Text, VStack } from "@chakra-ui/react";
 import momo from "../assets/momo.png";
-import AppButtons from "../components/AppButtons";
+import PaymentOptions from "../components/PaymentOptions";
 
 function Payments({ uuid }) {
   return (
