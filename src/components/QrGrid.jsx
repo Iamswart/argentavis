@@ -12,7 +12,6 @@ import JSZip from "jszip";
 import React, { useEffect, useRef, useState } from "react";
 import { BiDownload } from "react-icons/bi";
 import { fetchQRCodes } from "../services/api-client";
-// import QrCardSkeleton from "./QrCardSkeleton";
 
 const QrGrid = () => {
   const [qrCodes, setQrCodes] = useState([]);
@@ -23,7 +22,7 @@ const QrGrid = () => {
     const getQRCodes = async () => {
       try {
         const codes = await fetchQRCodes();
-        setQrCodes(codes.slice(0, 30)); // Take only the first 10 codes
+        setQrCodes(codes.slice(0, 30)); 
       } catch (error) {
         toast({
           title: "Error",
@@ -59,13 +58,6 @@ const QrGrid = () => {
     const zip = new JSZip();
     const promises = [];
 
-    // cardRefs.current.forEach((cardRef, index) => {
-    //   const promise = toImage.toBlob(cardRef).then((blob) => {
-    //     zip.file(`QRCode-${index + 1}.png`, blob);
-    //   });
-    //   promises.push(promise);
-    // });
-
     cardRefs.current.forEach((cardRef, index) => {
       const promise = toImage
         .toBlob(cardRef)
@@ -98,10 +90,7 @@ const QrGrid = () => {
         });
       })
       .catch(() => {
-        // Handle potential errors
         setLoading(false);
-
-        // Notify the user that there was an error
         toast({
           title: "Error",
           description: "Something went wrong while downloading.",
@@ -159,10 +148,4 @@ const QrGrid = () => {
 
 export default QrGrid;
 
-{
-  /* {Array.from({ length: 10 }).map((_, index) => (
-          <QrCardContainer key={index} ref={addToRefs}>
-            <QrCard />
-          </QrCardContainer>
-        ))} */
-}
+
