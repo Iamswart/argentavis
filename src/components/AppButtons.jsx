@@ -1,7 +1,7 @@
 import { Button, HStack, Icon } from "@chakra-ui/react";
 import React from "react";
-import {BsGooglePlay} from "react-icons/bs";
-import {AiFillApple} from "react-icons/ai";
+import { AiFillApple } from "react-icons/ai";
+import { BsGooglePlay } from "react-icons/bs";
 
 // interface StoreButtonProps extends ButtonProps {
 //   icon: React.ComponentType; 

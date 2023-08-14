@@ -1,6 +1,6 @@
 // api.js
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://qr-pay.onrender.com";
 
 export const fetchQRCodes = async () => {
   try {

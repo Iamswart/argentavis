@@ -1,15 +1,15 @@
 import {
   Box,
-  VStack,
+  Button,
   FormControl,
+  FormErrorMessage,
   FormLabel,
   Input,
-  Button,
-  FormErrorMessage,
+  VStack,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { activateQRCode } from "../services/api-client";
 import { useNavigate } from "react-router-dom";
+import { activateQRCode } from "../services/api-client";
 
 
 const Activation = ({ uuid }) => {

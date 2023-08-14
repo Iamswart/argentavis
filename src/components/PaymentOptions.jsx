@@ -37,7 +37,7 @@ const PaymentOptions = ({ uuid }) => {
   useEffect(() => {
     async function fetchUserDetails() {
       try {
-        const response = await fetch("http://localhost:3000/info", {
+        const response = await fetch("https://qr-pay.onrender.com/info", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
