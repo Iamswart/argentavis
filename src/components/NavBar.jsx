@@ -12,7 +12,6 @@ const name = ["QR PAY BY MOMO"];
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
-  const { isOpen, onOpen, onClose } = useDisclosure();
 
   useEffect(() => {
     const handleScroll = () => {
