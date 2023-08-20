@@ -1,6 +1,6 @@
 // api.js
 
-const BASE_URL = "https://qr-pay.onrender.com";
+const BASE_URL = "https://qr-api-5yjj.onrender.com";
 
 export const fetchQRCodes = async () => {
   try {
@@ -12,30 +12,3 @@ export const fetchQRCodes = async () => {
   }
 };
 
-
-export const activateQRCode = async (uuid, firstName, lastName, accountNumber) => {
-    try {
-      const response = await fetch(`${BASE_URL}/activate`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          id: uuid,
-          firstName,
-          lastName,
-          accountNumber
-        })
-      });
-      
-      if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.message || "Failed to activate QR code.");
-      }
-  
-      return await response.json();
-    } catch (error) {
-      throw error;
-    }
-  };
-  

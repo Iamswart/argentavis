@@ -1,4 +1,3 @@
-// NotFound.tsx
 
 import { Button, Center, Heading, Text, VStack, useColorModeValue } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
